@@ -1,0 +1,15 @@
+npm init -y
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
+npm install --save-dev @babel/core @babel/node
+
+npm i nodemon -D
+
+npm i rimraf
+
+npm install express express-graphql graphql
+
+npm install graphql-tools
+
+npm install mongoose

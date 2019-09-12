@@ -1,0 +1,64 @@
+query {
+  tasks{
+    _id
+    title
+    description
+    number
+  }
+}
+
+------------------------------------------------
+
+mutation {
+  createTask(input: {
+    title: "Task four"
+    description: "kjkjas"
+    number: 499
+  }){
+    _id
+    title
+    description
+    number
+  }
+}
+
+------------------------------------------------
+
+mutation {
+  createUser(input: {
+    firstname: "John",
+    lastname: "Carter",
+    age:33
+  }){
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+
+------------------------------------------------
+
+mutation {
+  deleteUser(_id: "5d7ad1357abf1e1eac9e435d"){
+    _id
+    firstname
+    lastname
+  }
+}
+
+------------------------------------------------
+
+mutation {
+	updateUser(_id: "5d7ad3691f25f22fb05a3a31", 
+    input: {
+      firstname: "kaskjdkjsa"
+      lastname: "kasjksakjdasd"
+    }
+  ){
+    _id
+    firstname
+    lastname
+    age
+  }
+}
